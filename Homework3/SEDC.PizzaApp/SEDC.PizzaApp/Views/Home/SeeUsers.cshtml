@@ -1,0 +1,10 @@
+﻿@using SEDC.PizzaApp.Models.ViewModels
+@model List<UserViewModel>
+
+<h2>All Users:</h2>
+<ol>
+    @foreach (var user in Model)
+    {
+        <li>@(user.FullName)</li>
+    }
+</ol>
